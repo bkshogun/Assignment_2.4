@@ -4,9 +4,8 @@
 	<title>Practice Form</title>
 </head>
 <body>
-
 <form action="success.html" method="get">
-	Which is your favorite kind of coffee?
+	<br>Which is your favorite kind of coffee?
 	<select name="Coffee">
 		<option value="Cappuccino">Cappuccino</option>
 		<option value="Latte">Latte</option>
@@ -14,11 +13,29 @@
 	</select>
 	<fieldset>
 		<div>
-			<label>Full Name</label>
-			<input type="text" name="fullname">
+			<label>First Name</label>
+			<input type="text" name="firstname">
 		</div>
 	</fieldset>
+
+	<br>Where do you want to search for coffee shops?<br><br>
+	<input type="checkbox" name="neighborhood" value="Hell's Kitchen">Hell's Kitchen<br>
+	<input type="checkbox" name="neighborhood" value="Carroll Gardens">Carroll Gardens<br>
+	<input type="checkbox" name="neighborhood" value="Astoria">Astoria<br><br><br>
 	
+	Tell us what you like about coffee:<br>
+	<textarea rows="4" cols="50" name="coffeelikes">
+	</textarea><br><br>
+	
+	What is your search radius?
+	<input list="radius" name="radius">
+		<datalist id="radius">
+			<option value="20 feet">
+			<option value="0.5 miles">
+			<option value="2 miles">
+		</datalist>
+
+	<br><input type="submit" value="Submit">
 
 </form>
 
